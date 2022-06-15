@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-def decorator(func):
-    def decorator_inside(A, B):
-        data = func(A, B)
-        return dict(zip(*data))
 
-    return decorator_inside
-
-# основная функция + подключаем к ней декоратор
-@decorator
 def listing(A, B):
     return A.split(), B.split()
 
